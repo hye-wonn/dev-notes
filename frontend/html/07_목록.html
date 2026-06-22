@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록 태그 사용</title>
+  </head>
+  <body>
+    <!-- 순서 있는 목록 -->
+    <ol>
+      <!-- ol이나 ul은 무조건 li를 자식으로 가져야 하며, li도 단독으로 사용할 수 없다. -->
+      <li>물 틀기</li>
+      <li>손에 물 묻히기</li>
+      <li>손에 세정제 짜기</li>
+      <li>문지르기</li>
+    </ol>
+
+    <!-- 순서 없는 목록 -->
+    <ul>
+      <!-- ol이나 ul은 무조건 li를 자식으로 가져야 하며, li도 단독으로 사용할 수 없다. -->
+      <li>국어</li>
+      <li>수학</li>
+      <li>사회</li>
+      <li>과학</li>
+    </ul>
+
+    <!-- 중첩 가능 -->
+    <!-- li 자식으로 서로 다른 목록 태그를 사용할 수 있으나, 목록 태그 사이에 다른 목록 태그 사용 불가능 -->
+    <ul>
+      <li>
+        국어
+        <ul>
+          <li>소설</li>
+          <li>고전시</li>
+        </ul>
+      </li>
+      <li>수학</li>
+      <li>사회</li>
+      <li>과학</li>
+    </ul>
+  </body>
+</html>
