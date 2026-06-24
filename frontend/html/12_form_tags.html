@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼(Form) 태그</title>
+  </head>
+  <body>
+    <form action="https://api.example.com/login">
+      <!-- 사용자가 입력하는 애들 묶어놓는 역할 -->
+      <label for="id">아이디</label>
+      <input type="text" id="id" placeholder="아이디를 작성하세요." />
+      <!-- label 태그의 for 속성값과 input 태그의 id 속성값이 일치하면 둘이 연결이 된다. -->
+      <!-- 입력 요소의 꼬리표 -->
+      <button>완료</button>
+      <!-- button 태그가 있어야 데이터를 데이터베이스로 전송 가능 -->
+    </form>
+    <label for="">[ ]에 대해 작성</label>
+    <textarea name="" id="">
+      <!-- 여러 줄의 텍스트를 입력 받는 요소 -->
+      <!-- 예시: [   ]에 대해 작성하세요. (최대 500자) -->
+    </textarea>
+    <!-- label 태그의 for 속성값과 input 태그의 id 속성값이 일치하면 둘이 연결이 된다. -->
+    <label for="country"></label>
+    <!-- 드롭다운 목록 -->
+    <select name="" id="country">
+      <option value="">--선택하세요--</option>
+      <option value="">대한민국</option>
+      <option value="">미국</option>
+      <option value="">일본</option>
+    </select>
+    <label for="country">국가</label>
+    <select name="" id="">
+      <optgroup label="아시아">
+        <option value="">한국</option>
+        <option value="">일본</option>
+        <option value="">중국</option>
+      </optgroup>
+      <optgroup label="유럽">
+        <option value="">독일</option>
+        <option value="">프랑스</option>
+        <option value="">이탈리아</option>
+      </optgroup>
+    </select>
+    <form action="">
+      <label for=""></label>
+      <input type="text" id="" list="country" />
+      <datalist id="country">
+        <option value="한국"></option>
+        <option value="미국"></option>
+        <option value="중국"></option>
+      </datalist>
+      <button></button>
+    </form>
+  </body>
+</html>
